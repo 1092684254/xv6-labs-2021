@@ -184,3 +184,10 @@ void            virtio_disk_intr(void);
 
 // number of elements in fixed-size array
 #define NELEM(x) (sizeof(x)/sizeof((x)[0]))
+
+//  kernel/kalloc.c 
+uint64             free_mem(void);
+//  /kernel/proc.c 
+int             n_proc(void);
+// // kernel/sysproc.c
+// uint64 sys_sysinfo(void);
